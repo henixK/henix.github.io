@@ -170,13 +170,13 @@ header {
 .main-item h3 {
   font-size: 20px;
   color: red;
-  margin-top: 20px;
+  line-height: 3em ;
+  
 }
 
 .main img {
   width: 40%;
   border-radius: 200px;
-  margin-top: 2em;
 }
 
 @media screen and (max-width: 600px) {
@@ -197,7 +197,6 @@ header {
 
   .main-item h1{
     font-size: 1.2em;
-    margin-top: 40px;
   }
 
   .main-item h3 {
@@ -207,7 +206,6 @@ header {
   .main img {
     width: 50%;
     border-radius: 200px;
-    margin-top: 2em;
   }
 }
 
