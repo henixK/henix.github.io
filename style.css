@@ -54,15 +54,63 @@ section em, strong {
 
 /* MENU NAVIGAZIONE */
 
-nav {
+.navbar {
+  font-family: "barlow", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content:space-between;
+  background-color: black;
   color: white;
-  list-style: none;
-  overflow: auto;
+  padding: 30px;
 }
 
-.icon {
-  color: white;
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+  
 }
+
+.logo {
+  margin-right: 50px;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+#toggler, 
+.navbar label {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .menu {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .list {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .navbar label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #toggler:checked .menu{
+    max-height: 100%;
+  }
+}
+  
+
 
 header {
   font-family: 'Barlow', sans-serif;
@@ -79,39 +127,7 @@ header {
   border-bottom-right-radius: 40px;
 }
 
-header nav {
-  display: flex;
-}
 
-header nav li {
-  margin: 0 15px;
-  margin-bottom: 30px;
-}
-
-header nav li:first-child {
-  margin-left: 0;
-}
-
-header nav li:last-child {
-  margin-right: 0;
-}
-
-@media (max width: 500px) {
-  header{
-    padding: 20px 50px;
-    background-color: blue;
-  }
-
-}
-
-@media  (max width: 600px) {
-  header{
-    flex-direction: column;
-  }
-  header h2 {
-    margin-bottom: 15px;
-  }
-}
 
 /* background */
 
@@ -122,25 +138,6 @@ header nav li:last-child {
   min-height: 120vh;
   text-align: center;
   font-family: 'barlow', sans-serif;
-}
-
-@media (max-width:: 800px) {
-  .main {
-    min-height: 600px;
-
-  }
-
-  .background-img {
-    flex-basis: 100%
-  }
-
-  .main-item h1{
-    font-size: 13px;
-  }
-
-  .main-item h3 {
-    font-size: 16px;
-  }
 }
 
 .main .background-img {
@@ -182,13 +179,44 @@ header nav li:last-child {
   margin-top: 2em;
 }
 
+@media screen and (max-width: 600px) {
+  .main {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+    font-size: 30px;
+
+
+  }
+
+  .background-img {
+    flex-basis: 100%;
+  }
+
+  .main-item h1{
+    font-size: 1.2em;
+    margin-top: 40px;
+  }
+
+  .main-item h3 {
+    font-size: 18px;
+  }
+
+  .main img {
+    width: 50%;
+    border-radius: 200px;
+    margin-top: 2em;
+  }
+}
+
 /* about me and skills */
 
 
 .bio , .flexbox-container {
   width: 100%;
   display: flex;
-  background-color: ;
   padding: 50px;
   box-sizing: border-box;
   text-align: center;
@@ -200,24 +228,14 @@ header nav li:last-child {
 
 .flexbox-item-1 {
   flex: 1;
-  background-color: ;
   padding: 30px;
 }
 
 .flexbox-item-2 {
   flex: 1;
-  background-color: ;
   padding: 30px;
   align-items: center;
 }
-
-
-@media (max-width: 100px){
-   .flexbox-item-1 .flexbox-item-2 {
-    flex: none;
-  }
-}
-
 
 .accordion {
   max-width: 100%;
@@ -258,6 +276,44 @@ header nav li:last-child {
   background-size: contain;
   transition: transform 0.4s;
 }
+
+.accordion__content {
+  background: #ffffff;
+  line-height: 1.6;
+  font-size: 0.85em;
+  display: none;
+}
+
+.accordion__input {
+  display: none;
+}
+
+.accordion__input:checked ~ .accordion__content {
+  display: block;
+}
+
+.accordion__input:checked ~ .accordion__label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+
+
+table {
+  display: flex;
+  justify-content: center;
+  font-family: "barlow", sans-serif;
+}
+
+td {
+  padding-left: 15px;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .flexbox-container {
+    display: inline;
+  }
+}
+
 
 
 /* Da implementare
@@ -378,7 +434,7 @@ textarea{
     background-color: #fff;
 }
 
-@media screen and (max-width: 880px){
+@media screen and (max-width: 600px){
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
