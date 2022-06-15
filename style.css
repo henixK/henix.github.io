@@ -170,7 +170,7 @@ header {
 .main-item h3 {
   font-size: 20px;
   color: red;
-  line-height: 3em ;
+  line-height: 5;
   
 }
 
@@ -201,11 +201,13 @@ header {
 
   .main-item h3 {
     font-size: 18px;
+    line-height: 3;
   }
 
   .main img {
     width: 50%;
     border-radius: 200px;
+    line-height: -2;
   }
 }
 
