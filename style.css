@@ -312,6 +312,10 @@ td {
   .flexbox-container {
     display: inline;
   }
+
+  .flexbox-item-1 {
+    flex-wrap: wrap;
+  }
 }
 
 
