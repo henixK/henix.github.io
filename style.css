@@ -309,12 +309,21 @@ td {
 }
 
 @media screen and (max-width: 600px) {
+  
+  .bio {
+    
+    border: 1px solid black;
+  }
+
   .flexbox-container {
     display: inline;
+    width: 550px;
+    border: 1px solid black;
   }
 
   .flexbox-item-1 {
-    flex-wrap: wrap;
+    
+    border: 1px solid black;
   }
 }
 
@@ -438,7 +447,7 @@ textarea{
     background-color: #fff;
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 650px){
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
@@ -451,6 +460,6 @@ textarea{
   }
 
   .field {
-    width: 100%;
+    width: 350px;
   }
 }
