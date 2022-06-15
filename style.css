@@ -201,6 +201,7 @@ header {
 
   .main-item h3 {
     font-size: 18px;
+    display: inline;
   }
 
   .main img {
