@@ -86,7 +86,7 @@ section em, strong {
   display: none;
 }
 
-@media (min-width: 43.75em)  {
+@media (min-width: 36em)  {
   .menu {
     width: 100%;
     max-height: 0;
@@ -179,7 +179,7 @@ header {
   border-radius: 200px;
 }
 
-@media (min-width: 43.75em) 
+@media (min-width: 36em) 
  {
   .main {
     display: flex;
@@ -309,7 +309,7 @@ td {
   align-items: center;
 }
 
-@media (min-width: 43.75em) {
+@media (min-width: 36em) {
   
   .bio {
     
@@ -448,7 +448,7 @@ textarea{
     background-color: #fff;
 }
 
-@media (min-width: 43.75em)  {
+@media (min-width: 36em)  {
 	.contact-box{
 		grid-template-columns: 1fr;
 	}
