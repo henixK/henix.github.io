@@ -77,7 +77,7 @@ section em, strong {
   justify-content:space-between;
   background-color: black;
   color: white;
-  padding: 30px;
+  padding: 15px;
 }
 
 .navbar a {
@@ -133,14 +133,14 @@ section em, strong {
   display: flex;
   position: relative;
   justify-content: center;
-  min-height: 120vh;
+  min-height: 100vh;
   text-align: center;
   font-family: 'barlow', sans-serif;
 }
 
 .main .background-img {
   position: absolute;
-  top: 20px;
+  top: 10px;
   left: 0;
   bottom: 10%;
   width: 100%;
