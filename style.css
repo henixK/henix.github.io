@@ -103,6 +103,7 @@ section em, strong {
   transform: scaleX(0);
   transform-origin: right;
   transition: transform .5s;
+  z-index:9999999;
 }
 .nav__link:hover::after{
   transform: scaleX(1);
@@ -138,6 +139,7 @@ section em, strong {
   width: 30px;
   transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
   border-radius: 2px;
+  
 }
 
 .menu-button::before {
@@ -181,6 +183,7 @@ section em, strong {
     width: 100%;
     justify-content: center;
     align-items: center;
+    z-index:1;
   }
 
   #menu-toggle ~ .nav__list li {
