@@ -215,7 +215,7 @@ section em, strong {
 /* background */
 
 .main {
-    display: flex;
+  display: flex;
   position: relative;
   justify-content: center;
   min-height: 90vh;
