@@ -271,7 +271,7 @@ section em, strong {
   display: flex;
 }
 .container .box .title h1 {
-  font-family: "barlow";
+  font-family: "Poppins";
   color: black;
   font-size: 4em;
   -webkit-animation: mainFadeIn 2s forwards;
@@ -321,7 +321,7 @@ section em, strong {
   animation-delay: 3.2s;
   opacity: 0;
   font-weight: 400;
-  font-family: "barlow";
+  font-family: "";
   color: red;
   font-size: 12px;
   text-transform: uppercase;
@@ -368,14 +368,14 @@ section em, strong {
   0% {
     width: 0px;
     height: 0px;
-    background: #e9d856;
+    background: #FAB536;
     border: 0px solid #ddd;
     opacity: 0;
   }
   50% {
     width: 10px;
     height: 10px;
-    background: #e9d856;
+    background: #FAB536;
     opacity: 1;
     bottom: 45px;
   }
@@ -393,7 +393,7 @@ section em, strong {
   100% {
     width: 7px;
     height: 7px;
-    background: #e9d856;
+    background: #FAB536;
     border: 0px solid #222;
     bottom: 13px;
   }
