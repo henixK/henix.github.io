@@ -236,14 +236,14 @@ section em, strong {
   left: 50%;
   transform: translate(-50%, -50%)
 }
-.container {
+.presentation_container {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.container .box {
+.presentation_container .box {
   width: 500px;
   height: 500px;
   position: relative;
@@ -254,7 +254,7 @@ section em, strong {
 
 }
 
-.container .box .title {
+.presentation_container .box .title {
   width: 100%;
   position: relative;
   display: flex;
@@ -262,7 +262,7 @@ section em, strong {
   height: 120px;
   
 }
-.container .box .title .block {
+.presentation_container .box .title .block {
   width: 0%;
   height: inherit;
   background: #ffb510;
@@ -270,7 +270,7 @@ section em, strong {
   animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
   display: flex;
 }
-.container .box .title h1 {
+.presentation_container .box .title h1 {
   font-family: "Poppins";
   color: black;
   font-size: 4em;
@@ -283,7 +283,7 @@ section em, strong {
   align-items: center;
   position: relative;
 }
-.container .box .title h1 span {
+.presentation_container .box .title h1 span {
   width: 0px;
   height: 0px;
   -webkit-border-radius: 50%;
@@ -299,7 +299,7 @@ section em, strong {
   bottom: 13px;
   right: -12px;
 }
-.container .box .role {
+.presentation_container .box .role {
   width: 100%;
   position: relative;
   display: flex;
@@ -307,7 +307,7 @@ section em, strong {
   height: 30px;
   margin-top: -10px;
 }
-.container .box .role .block {
+.presentation_container .box .role .block {
   width: 0%;
   height: inherit;
   background: #e91e63;
@@ -316,7 +316,7 @@ section em, strong {
   animation-delay: 2s;
   display: flex;
 }
-.container .box .role p {
+.presentation_container .box .role p {
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
   opacity: 0;
@@ -407,27 +407,11 @@ section em, strong {
   }
 }
 
-@media screen and 
-(max-width: 600px) {
-  .box {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .container .box .title h1 {
-    font-size: 2.5em;
-  }
-
-  .container .box .title {
-    height: 200px;
-  }
-
-
 
 /* about me and skills */
 
 
-.bio , .flexbox-container {
+.bio, .flexbox-contenitore {
   width: 100%;
   height: 100%;
   display: flex;
@@ -438,7 +422,7 @@ section em, strong {
 }
 
 .flexbox-container h2 {
-  margin-bottom: 60px;
+  margin-bottom: 20000px;
 }
 
 .flexbox-item-2 {
@@ -516,6 +500,100 @@ td {
   padding-left: 15px;
   align-items: center;
 }
+@media screen and 
+(max-width: 1000px) {
+  .bio , .flexbox-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .flexbox-container h2 {
+    margin-bottom: 60px;
+  }
+  
+  .flexbox-item-2 {
+    width: 100%;
+  }
+  
+  .accordion {
+    max-width: 50% ;
+    margin: 90px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "lato", sans-serif;
+    background: #b49475;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+  
+  
+  table {
+    display: flex;
+    justify-content: center;
+    font-family: "barlow", sans-serif;
+  }
+  
+  td {
+    padding-left: 15px;
+    align-items: center;
+  }
+}
+
+
 
 @media screen and 
 (max-width: 600px) {
@@ -690,3 +768,20 @@ footer {
   color: white;
   padding: 15px;
 }
+
+
+
+@media screen and 
+(max-width: 600px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .presentation_container .box .title h1 {
+    font-size: 2.7em;
+  }
+
+  .presentation_container .box .title {
+    height: 120px;
+  }
