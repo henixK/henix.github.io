@@ -227,14 +227,6 @@ header {
   text-align: center;
 }
 
-.background-img {
-  width: 100vw;
-  height: 100vh;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  position: relative;
-}
 .main .background-img {
   position: absolute;
   top: 10px;
@@ -251,13 +243,7 @@ header {
   transform: translate(-50%, -50%)
 }
 
-.background-img {
-  width: 100vw;
-  height: 100vh;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  position: relative;
-}
+
 
 
 .presentation_container {
