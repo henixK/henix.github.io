@@ -503,7 +503,6 @@ button {
   float: left;
   width: 100%;
   padding: 30px;
-  border: 1px solid black;
 }
 .username {
   margin-top: 30px;
@@ -524,7 +523,6 @@ button {
 
 
 .flexbox-item-2 {
-  border: 1px solid black;
   padding: 70px;
   width: 100%;
 }
@@ -1111,7 +1109,8 @@ textarea{
 
 @media screen and 
 (max-width: 600px)  {
-	.contact-box{
+	
+  .contact-box{
 		grid-template-columns: 1fr;
 	}
 	.left{
@@ -1124,6 +1123,10 @@ textarea{
 
   .field {
     width: 100%;
+  }
+
+  .btn {
+    width: 50%;
   }
 }
 
