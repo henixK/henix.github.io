@@ -38,6 +38,7 @@ section {
 (max-width: 600px) {
   section {
     padding: 80px 30px;
+    align-items: center;
   }
 }
 
@@ -233,25 +234,21 @@ header {
   left: 0;
   bottom: 10%;
   width: 100%;
-  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
   min-height: 100vh;
-  top: 55%;
-  left: 50%;
-  transform: translate(-50%, -50%)
 }
 
 
-
-
-.presentation_container {
+.main .background-img .presentation_container {
   width: 100%;
   height: 100vh;
   display: flex;
+  position: absolute;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 .presentation_container .box {
   width: 500px;
@@ -693,12 +690,12 @@ td {
   }
 
   .flexbox-item-1 {
-    width: 110%;
+    width: 100%;
     align-content: center;
   }
 
   .flexbox-item-2 {
-    width: 110%;
+    width: 100%;
     align-content: center;
   }
 
