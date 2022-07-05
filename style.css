@@ -662,7 +662,11 @@ td {
   .accordion__input {
     display: none;
   }
-  
+		
+  .accordion__input ~ .accordion__content {
+    display: none;
+  }
+  	
   .accordion__input:checked ~ .accordion__content {
     display: block;
   }
