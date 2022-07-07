@@ -230,7 +230,7 @@ header {
 
 .main .background-img {
   position: absolute;
-  top: 10px;
+  top: 3.438em;
   left: 0;
   bottom: 10%;
   width: 100%;
@@ -238,10 +238,20 @@ header {
   background-position: center;
   background-size: cover;
   min-height: 100vh;
+  border-bottom-left-radius: 10%;
+  border-bottom-right-radius: 10%;
 }
 
 
-.main .background-img .presentation_container {
+.main img {
+  position: absolute;
+  top: 30%;
+  border-radius: 100%;
+  width: 12em;
+  height: 12em;
+}
+
+.presentation_container {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -249,6 +259,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
+  bottom: -150px;
 }
 .presentation_container .box {
   width: 500px;
@@ -302,7 +313,7 @@ header {
   margin-left: 5px;
   margin-top: -10px;
   position: absolute;
-  bottom: 13px;
+  bottom: 20px;
   right: -12px;
 }
 
@@ -312,8 +323,8 @@ header {
   position: relative;
   display: flex;
   align-items: center;
-  height: 30px;
-  margin-top: 70px;
+  height: 10px;
+  margin-top: 80px;
 }
 .presentation_container .box .role .block {
   width: 0%;
@@ -328,10 +339,9 @@ header {
   animation: secFadeIn 2s forwards;
   animation-delay: 3.2s;
   opacity: 0;
-  font-weight: 400;
-  font-family: "";
+  font-family: "Barlow", sans-serif;
   color: red;
-  font-size: 12px;
+  font-size: 1em;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
@@ -411,13 +421,13 @@ header {
     opacity: 0;
   }
   100% {
-    opacity: 0.5;
+    opacity: 1;
   }
 }
 
 .frame {
   width: 90%;
-  margin: 40px auto;
+  margin: 20px auto;
   text-align: center;
 }
 
@@ -427,8 +437,8 @@ button {
 }
 
 .custom-btn {
-  width: 130px;
-  height: 40px;
+  width: 200px;
+  height: 50px;
   padding: 10px 25px;
   border: 2px solid #000;
   font-family: 'Lato', sans-serif;
@@ -749,24 +759,24 @@ td {
 }
 
 .spinner .rect1 {
-     background:#FEDD31;
+  background:#FEDD31;
   -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
 .spinner .rect2 {
-     background:#FEDD31;
+  background:#FEDD31;
   -webkit-animation-delay: -1.1s;
   animation-delay: -1.1s;
 }
 
 .spinner .rect3 {
-     background:#FEDD31;
+  background:#FEDD31;
   -webkit-animation-delay: -1.0s;
   animation-delay: -1.0s;
 }
 
 .spinner .rect4 {
-     background:#FEDD31;
+  background:#FEDD31;
   -webkit-animation-delay: -0.9s;
   animation-delay: -0.9s;
 }
