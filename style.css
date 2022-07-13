@@ -271,6 +271,7 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin: auto;
 }
 
 .presentation_container .box .title {
@@ -1022,5 +1023,23 @@ article h1 {
     font-size: 1.2em;
   }
 
+  .presentation_container .box .role p {
+
+    letter-spacing: 2px;
+  }
+
 }
 
+@media screen and 
+(max-width: 1000px) {
+
+  .main img {
+    max-width: 9em;
+    height: auto;
+    margin-top: 50px;
+  }
+
+  article {
+    height: 40vh;
+  }
+}
