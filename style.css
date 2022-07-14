@@ -834,7 +834,7 @@ article h1 {
   }
 
   article {
-    min-height: 55vh;
+    height: 55vh;
   }
 
   .mini-bio {
