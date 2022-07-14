@@ -26,48 +26,6 @@ section {
   justify-content: center;
 }
 
-
-
-@media screen and 
-(max-width: 1000px) {
-  section {
-    padding: 100px 50px;
-  }
-}
-
-@media screen and 
-(max-width: 600px) {
-  section {
-    padding: 80px 30px;
-    align-items: center;
-  }
-}
-
-section p {
-  max-width: 800px;
-  text-align: center;
-  margin-bottom: 35px;
-  padding: 0 20px;
-  line-height: 2;
-  font-size: 1,2em;
-}
-
-section h2 {
-  font-family: "barlow", sans-serif;
-  font-size: 2em;
-}
-
-
-section h1 {
-  font-family: "barlow", sans-serif;
-  font-size: 3em;
-  position: relative;
-}
-
-strong {
-  font-family: "barlow", sans-serif;
-}
-
 /* MENU NAVIGAZIONE */
 
 header {
@@ -174,55 +132,6 @@ header {
   margin-top: 0px;
   transform: rotate(-405deg);
 }
-
-
-
-@media screen and 
-(max-width: 600px){
-  .menu-button-container {
-    display: flex;
-  }
-
-  .nav__list {
-    position: absolute;
-    top: 0;
-    margin-top: 50px;
-    left: 0;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    z-index:1;
-  }
-
-  #menu-toggle ~ .nav__list li {
-    height: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  #menu-toggle:checked ~ .nav__list li {
-    height: 2.5em;
-    padding: 0.5em;
-    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
-  }
-
-  .nav__list > li {
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0.5em 0;
-    width: 100%;
-    color: white;
-    background-color: black;
-  }
-
-}
-
-
-
 /* background */
 
 
@@ -616,103 +525,6 @@ td {
   padding-left: 15px;
   align-items: center;
 }
-@media screen and 
-(max-width: 1000px) {
-  .bio {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    padding: 50px;
-    text-align: center;
-    align-items: center;
-  }
-  
-  .accordion {
-    max-width: 50% ;
-    margin: 90px auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: "lato", sans-serif;
-    background: #b49475;
-  }
-  
-  .accordion__label,
-  .accordion__content {
-    padding: 14px 20px;
-  }
-  
-  .accordion__label {
-    display: block;
-    color: #ffffff;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-    transition: background 0.1s;
-  }
-  
-  .accordion__label:hover {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  
-  .accordion__label::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 20px;
-    width: 12px;
-    height: 6px;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
-    background-size: contain;
-    transition: transform 0.4s;
-  }
-  
-  .accordion__content {
-    background: #ffffff;
-    line-height: 1.6;
-    font-size: 0.85em;
-    display: none;
-  }
-  
-  .accordion__input {
-    display: none;
-  }
-  
-  .accordion__input:checked ~ .accordion__content {
-    display: block;
-  }
-  
-  .accordion__input:checked ~ .accordion__label::after {
-    transform: translateY(-50%) rotate(0.5turn);
-  }
-  
-  
-  table {
-    display: flex;
-    justify-content: center;
-    font-family: "barlow", sans-serif;
-  }
-  
-  td {
-    padding-left: 15px;
-    align-items: center;
-  }
-}
-
-
-
-@media screen and 
-(max-width: 600px) {
-
-  .accordion {
-    max-width: 300px;
-  }
-}
- 
-
-
 /* form e social  */
 
 .contact-container{
@@ -880,27 +692,6 @@ textarea{
 }
 
 
-@media screen and 
-(max-width: 600px)  {
-	
-  .contact-box{
-		grid-template-columns: 1fr;
-	}
-
-  .btn {
-    width: 100%;
-  }
-
-  .field {
-    width: 100%;
-  }
-
-  .btn {
-    width: 50%;
-  }
-}
-
-
 /* footer */ 
 
 footer { 
@@ -935,7 +726,7 @@ footer {
 
 article {
   max-width: 100%;
-  height: 45vh;
+  height: 35vh;
   position: relative;
   top: 55px;
   display: flex;
@@ -962,34 +753,92 @@ article h1 {
 
 
 
-@media screen and 
-(max-width: 600px) {
+@media only screen and (max-width: 600px) {
 
-  .title {
-    left: 10px;
+section {
+    align-items: center;
   }
 
-  .box {
-    width: 100%;
-    height: 0em;
-  }
+
+section p {
+  max-width: 800px;
+  text-align: center;
+  margin-bottom: 35px;
+  padding: 0 20px;
+  line-height: 2;
+  font-size: 1,2em;
+}
+
+section h2 {
+  font-family: "barlow", sans-serif;
+  font-size: 2em;
+}
+
+
+section h1 {
+  font-family: "barlow", sans-serif;
+  font-size: 3em;
+  position: relative;
+}
+
+strong {
+  font-family: "barlow", sans-serif;
+}
+
+.menu-button-container {
+  display: flex;
+}
+
+.nav__list {
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  left: 0;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  z-index:1;
+}
+
+#menu-toggle ~ .nav__list li {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+#menu-toggle:checked ~ .nav__list li {
+  height: 2.5em;
+  padding: 0.5em;
+  transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav__list > li {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0.5em 0;
+  width: 100%;
+  color: white;
+  background-color: black;
+}
 
   .presentation_container .box .title h1 {
     font-size: 2.7em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   .presentation_container .box .role {
-    height: 70px;
+    height: 10px;
     top: 20px;
-    margin-top: 50px
-  }
-
-  .social-button{
-    margin: 0px 5px;
   }
 
   article {
-    min-height: 60vh;
+    min-height: 48vh;
   }
 
   .mini-bio {
@@ -1023,15 +872,49 @@ article h1 {
     font-size: 1.2em;
   }
 
-  .presentation_container .box .role p {
-
-    letter-spacing: 2px;
+.presentation_container .box .role p {
+    letter-spacing: 1px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
+  .footer-buttons {
+    flex: content;
+  }
+
+  .flexbox-contenitore {
+    padding-top: 70px;
+  }
+
+  .accordion {
+    width: 300px;
+  }
+
+  .contact-box{
+		grid-template-columns: 1fr;
+	}
+
+  .btn {
+    width: 100%;
+  }
+
+  .field {
+    width: 100%;
+  }
+
+  .btn {
+    width: 50%;
+  }
 }
 
 @media screen and 
 (max-width: 1000px) {
+
+  section {
+    padding: 100px 50px;
+  }
 
   .main img {
     max-width: 9em;
@@ -1041,5 +924,87 @@ article h1 {
 
   article {
     height: 40vh;
+  }
+
+  .bio {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+    align-items: center;
+  }
+  
+  .accordion {
+    max-width: 50% ;
+    margin: 90px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-family: "lato", sans-serif;
+    background: #b49475;
+  }
+  
+  .accordion__label,
+  .accordion__content {
+    padding: 14px 20px;
+  }
+  
+  .accordion__label {
+    display: block;
+    color: #ffffff;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    transition: background 0.1s;
+  }
+  
+  .accordion__label:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .accordion__label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    width: 12px;
+    height: 6px;
+    background-image: url('data:image/svg+xml;utf8,<svg width="100" height="50" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 100,0 50,50" style="fill:%23FFFFFF99;" /></svg>');
+    background-size: contain;
+    transition: transform 0.4s;
+  }
+  
+  .accordion__content {
+    background: #ffffff;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+  }
+  
+  .accordion__input {
+    display: none;
+  }
+  
+  .accordion__input:checked ~ .accordion__content {
+    display: block;
+  }
+  
+  .accordion__input:checked ~ .accordion__label::after {
+    transform: translateY(-50%) rotate(0.5turn);
+  }
+  
+  
+  table {
+    display: flex;
+    justify-content: center;
+    font-family: "barlow", sans-serif;
+  }
+  
+  td {
+    padding-left: 15px;
+    align-items: center;
   }
 }
