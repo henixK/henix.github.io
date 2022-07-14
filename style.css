@@ -834,7 +834,7 @@ article h1 {
   }
 
   article {
-    height: 55vh;
+    min-height: 60vh;
   }
 
   .mini-bio {
@@ -908,6 +908,7 @@ article h1 {
     max-width: 150px;
     height: 40px;
     font-size: 1rem;
+    align-items: center;
   }
 }
 @media screen and 
