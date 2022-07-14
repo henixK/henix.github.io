@@ -17,6 +17,11 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+  text-decoration: underline;
+}
+
+strong {
+  font-family: "barlow", sans-serif;
 }
 
 
@@ -775,11 +780,6 @@ article h1 {
 
 @media only screen and (max-width: 600px) {
 
-
-
-strong {
-  font-family: "barlow", sans-serif;
-}
 
 .menu-button-container {
   display: flex;
